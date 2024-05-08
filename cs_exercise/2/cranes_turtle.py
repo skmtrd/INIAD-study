@@ -1,5 +1,1 @@
-total_legs = int(input("PLEASE INPUT TOTAL LEGS :"))
-num_turtles = int(input("PLEASE INPUT NUMBER OF TURTLES :"))
-cranes_legs = total_legs - (num_turtles * 4)
-num_cranes = int(cranes_legs / 2)
-print(f"THERE IS {num_cranes} CRANES") if num_cranes == 1 else print(f"THERE ARE {num_cranes} CRANES")
+ 100
