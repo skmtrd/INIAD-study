@@ -1,0 +1,9 @@
+from statistics import mean
+from statistics import stdev
+scores = [97, 83, 64, 29, 59, 28, 84, 72]
+
+def standard_score(x):
+    result = 50 + 10 * (x - mean(scores)) / stdev(scores)
+    return result
+
+print(standard_score(97))

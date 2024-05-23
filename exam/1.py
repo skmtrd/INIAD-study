@@ -1,2 +1,4 @@
-for i in range(int(input("a =")), int(input("b =")) + 1):
-    print(i)
+number_list = ["one", "two", "three", "four", "five"]
+ 
+for num in number_list:
+    print(num)
