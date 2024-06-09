@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <link>
+    <meta charset="UTF-8" />
+    <title>HTML要素のまとめ</title>
+    <link rel="stylesheet" type="text/css" href="web2.css" />
+
+  </head>
+
+  <body>
+    <div class="container" id="container">
+      <div class="btnBase" id="btnBase">
+        <div class="btn" id="btn" onclick="toggle()"></div>
+      </div>
+    </div>
+
+    <script>
+      const btn = document.getElementById("btn");
+      const container = document.getElementById("container");
+      const btnBase = document.getElementById("btnBase");
+      let toggled = false;
+
+      function toggle() {
+        if (toggled) {
+          btn.style.left = "15px";
+          btn.style.background = "black";
+          container.style.background = "white";
+        } else {
+          btn.style.left = "125px";
+          btn.style.background = "white";
+          container.style.background = "black";
+
+        }
+        toggled = !toggled;
+      }
+    </script>
+  </body>
+</html>
