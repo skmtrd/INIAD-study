@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <link>
+    <meta charset="UTF-8" />
+    <title>HTML要素のまとめ</title>
+    <link rel="stylesheet" type="text/css" href="./index.css" />
+  </head>
+
+  <body>
+    <div class="container" id="container">
+        <button id="btn" class="btn">Click Here !</button>
+    </div>
+
+    <script>
+        const btn = document.getElementById('btn');
+        btn.addEventListener('click', function(){
+            this.innerHTML = 'Clicked !';
+            this.style.background = 'red';
+        });
+    </script>
+  </body>
+</html>
