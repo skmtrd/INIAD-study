@@ -1,9 +1,11 @@
 class Bank:
     def __init__(self, amounts):
         self._amounts = amounts.copy()
+
     def transfer(self, sender, receiver, yen):
         self._amounts[sender] -= yen
         self._amounts[receiver] += yen
+
     def withdraw(self, name, yen):
         if self._amounts[name] < yen:
             return None
