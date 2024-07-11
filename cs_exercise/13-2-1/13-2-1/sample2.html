@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <title>JavaScript Sample 2</title>
+    <link rel="stylesheet" type="text/css" href="css/sample.css" />
+    <!-- <script src="js/sample2.js"></script> -->
+  </head>
+
+  <body>
+    <h1>JavaScript Sample</h1>
+
+    <h2>Sample 2-1 : onclick属性でJavaScriptを呼び出す</h2>
+    <p>以下のボタンをクリックすると、アラートダイアログが表示されます。</p>
+    <button onclick="showDialog()">Show Dialog</button>
+
+    <h2>Sample 2-2 : HTMLを書き換える</h2>
+    <p>以下のボタンをクリックすると、コンテンツが書き換わります。</p>
+    <button id="aaa">Count</button>
+    <p class="result"><span id="count">0</span>回クリックされました。</p>
+    <button onclick="">aaa</button>
+    <script>
+      let element = document.getElementById("aaa");
+      let countelement = document.getElementById("count");
+      let count = 0;
+
+      element.addEventListener("mouseenter", function () {
+        count++;
+        countelement.textContent = count.toString();
+      });
+    </script>
+  </body>
+</html>

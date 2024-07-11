@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <title>JavaScript Sample</title>
+    <link rel="stylesheet" type="text/css" href="css/sample.css" />
+    <script src="js/assignment.js"></script>
+  </head>
+
+  <body>
+    <h1>JavaScript Assignment</h1>
+
+    <h2>課題 : 消費税を計算</h2>
+    <form>
+      <p>
+        <label for="price-without-tax">税抜価格</label>
+        <input id="price-without-tax" type="text" value="" />
+        円
+      </p>
+      <p>
+        <label for="tax-rate">消費税率</label>
+        <input id="tax-rate" type="text" />
+        ％
+      </p>
+    </form>
+    <button onclick="calcTax()">計算</button>
+
+    <div class="result">
+      <p>
+        税込価格 : <span id="price">？</span>円 （消費税 :
+        <span id="tax">？</span>円）
+      </p>
+    </div>
+  </body>
+</html>

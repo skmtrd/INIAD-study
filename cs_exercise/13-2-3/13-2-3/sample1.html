@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <title>JavaScript Sample 6</title>
+    <link rel="stylesheet" type="text/css" href="css/sample.css">
+    <script src="js/sample1.js"></script>
+  </head>
+
+  <body>
+    <h1>JavaScript Sample</h1>
+    <h2>Sample 1-1 : setTimeoutを使う</h2>
+    <p>Startボタンを押すと、5秒後にアラートダイアログが表示されます。<br>Stopボタンでキャンセルされます。</p>
+    <button onclick="startTimeout()">Start</button>
+    <button onclick="stopTimeout()">Stop</button>
+
+    <h2>Sample 1-2 : setIntervalを使う</h2>
+    <p>Startボタンを押すと、1秒間隔でコンテンツが書き換わります。<br>Stopボタンでキャンセルされます。</p>
+    <button onclick="startInterval()">Start</button>
+    <button onclick="stopInterval()">Stop</button>
+
+    <p class="result"><span id="count">0</span>秒経過</p>
+  </body>
+</html>
