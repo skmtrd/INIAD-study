@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>JavaScript API Sample</title>
+    <link rel="stylesheet" type="text/css" href="css/sample.css">
+    <script src="js/sample.js"></script>
+  </head>
+
+  <body>
+    <h1>JavaScript API Samples</h1>
+
+    <h2>Sample 1: Geocoding API</h2>
+    <p>
+      <label for="input-address">住所</label>
+      <input id="input-address" type="text">
+    </p>
+
+    <button onclick="getCoordinate()">座標を取得</button>
+    <div class="result">
+      <p>
+        緯度: <span id="lat"></span><br>
+        経度: <span id="lon"></span>
+      </p>
+    </div>
+
+    <h2>Sample 2: OpenWeatherMap API</h2>
+    <p>
+      <label for="input-lat">緯度</label>
+      <input id="input-lat" type="text">
+    </p>
+    <p>
+      <label for="input-lon">経度</label>
+      <input id="input-lon" type="text">
+    </p>
+
+    <button onclick="getWeather()">天気を取得</button>
+
+    <div class="result">
+      <p>
+        都市: <span id="city"></span><br>
+        天気: <span id="weather"></span><br>
+        気温: <span id="temperature"></span> degree<br>
+        湿度: <span id="humidity"></span> %<br>
+        気圧: <span id="pressure"></span> hPa
+      </p>
+    </div>
+
+    <h2>Sample 3: Google Maps API</h2>
+    <p>
+      <label for="input-lat2">緯度</label>
+      <input id="input-lat2" type="text">
+    </p>
+    <p>
+      <label for="input-lon2">経度</label>
+      <input id="input-lon2" type="text">
+    </p>
+
+    <button onclick="setMapCenter()">地図の中心を移動</button>
+
+    <div id="map"></div>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAYSeZRkkIEUkvEc1Ut7UYs7q0lLRZds94&callback=initMap" async defer></script>
+  </body>
+</html>
