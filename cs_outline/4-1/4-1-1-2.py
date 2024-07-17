@@ -18,4 +18,3 @@ print(list_uppee(["sakamoto", "soya"]))
 
 x = "iniad"
 print(x.upper())
-#実行結果---INIAD
