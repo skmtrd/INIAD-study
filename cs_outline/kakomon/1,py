@@ -1,0 +1,13 @@
+def ch05(x):
+    if str(x)[1] == "0" or str(x)[1] == "5":
+        return "OK"
+    else:
+        return "NG"
+    
+ans = ch05(80)
+print(ans)
+print(ch05(23))
+print(ch05(35))
+print(ch05(51))
+
+    
