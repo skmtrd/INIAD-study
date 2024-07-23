@@ -22,4 +22,3 @@ print(cont(s2))
 print(cont(s3))
 r = cont(s4)
 print(r)
-        
