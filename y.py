@@ -1,12 +1,17 @@
-def mikitani(yen):
-    str_yen = str(yen);
-    result = ''
-    count = 0
-    for i in range(len(str_yen)-1, -1, -1):
-        count += 1
-        if count % 3 == 0 and count != 0:
-            result = "," + str_yen[i] + result
-            continue
-        result = str_yen[i] + result
-    return result
-print(mikitani(1234342425325425))
+class Mac:
+    def __init__(self, name, value):
+        self.name = name
+        self.value = value
+
+    def show (self):
+        print(f"{self.name}は{self.value}円です")
+    
+    def discount (self, value):
+        self.value -= value
+
+L_potato = Mac("Large-potato", 380)
+M_potato = Mac("Midium-potato", 200)
+
+
+L_potato.discount(100)
+L_potato.show()
