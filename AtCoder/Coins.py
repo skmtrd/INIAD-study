@@ -19,6 +19,7 @@ All_Lists = [A_List, B_List, C_List]
 Value_Exist_Lists = [List for List in All_Lists if len(List) > 0]
 count = 0
 for value1 in Value_Exist_Lists[0]:
+    
     if value1 == X:
         count += 1
     if len(Value_Exist_Lists) >= 2:
